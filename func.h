@@ -5,6 +5,6 @@
 #ifndef FUNC_H
 #define FUNC_H
 
-char* dalete(char *array, char ch);
+void replace_text(const char* filename, const char* old_text, const char* new_text);
 
 #endif //FUNC_H
