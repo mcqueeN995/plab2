@@ -63,7 +63,7 @@ void add(const char* file_name, const char* text, const char* position) {
     fclose(file_r);
     fclose(file_w);
 
-    if (rename("file_w.txt", file_name) != 0) {
+    if (rename("temp.txt", file_name) != 0) {
         perror("Error: can't rename file");
         exit(EXIT_FAILURE);
     }
@@ -88,7 +88,7 @@ void delete(const char* file_name, const char* delete_text) {
     fclose(file_r);
     fclose(file_w);
 
-    if (rename("file_w.txt", file_name) != 0) {
+    if (rename("temp.txt", file_name) != 0) {
         perror("Error: can't rename file");
         exit(EXIT_FAILURE);
     }
